@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Baile</title>
+  <link rel="stylesheet" href="assets/output.css">
+</head>
+
+<body class="text-gray-800">
+
+<!-- NAVBAR -->
+<nav class="absolute top-0 left-0 w-full z-20 text-white">
+  <div class="flex items-center justify-between px-6 py-4">
+
+    <!-- LOGO -->
+    <img src="svg/logo.svg" class="h-10" alt="Logo">
+
+    <!-- MENÚ DESKTOP -->
+    <div class="hidden md:flex space-x-10 text-lg">
+      <a href="informatica.html" class="hover:text-gray-300">Informática</a>
+      <a href="fotografia.html" class="hover:text-gray-300">Fotografía</a>
+      <a href="danza.html" class="hover:text-gray-300">Danza</a>
+    </div>
+
+    <button id="menuBtn" class="md:hidden">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+  </div>
+
+  <!-- PANEL MÓVIL -->
+  <div id="mobileMenu"
+       class="fixed top-0 right-0 w-full h-screen bg-black/95 transform translate-x-full transition duration-300 flex flex-col items-center justify-center space-y-8 text-2xl">
+
+    <button id="closeMenu" class="absolute top-6 right-6 text-3xl">✕</button>
+    
+    <a href="informatica.html" class="hover:text-gray-300">Informática</a>
+    <a href="fotografia.html" class="hover:text-gray-300">Fotografía</a>
+    <a href="danza.html" class="hover:text-gray-300">Danza</a>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="relative h-screen overflow-hidden flex items-center justify-center text-white">
+
+  <!-- IMAGEN DE FONDO -->
+  <img 
+    src="img/danza/baile.jpg"
+    class="absolute inset-0 w-full h-full object-cover"
+    alt="Hero"
+  >
+
+  <!-- OVERLAY OSCURO -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- CONTENIDO -->
+  <div class="relative text-center">
+    <h1 class="text-6xl font-bold">Danza</h1>
+    <p class="mt-4 text-xl">Movimiento – Expresión – Libertad</p>
+  </div>
+
+</header>
+
+<!-- SERVICIOS -->
+<section class="py-20 bg-white text-center">
+
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6">
+
+    <!-- ITEM -->
+    <div class="flex flex-col items-center">
+      <div class="w-20 h-20 flex items-center justify-center mb-4">
+        <svg class="w-12 h-12">
+          <use href="svg/sprites.svg#icon-dance"></use>
+        </svg>
+      </div>
+      <h3 class="font-semibold text-lg">Estilo principal</h3>
+      <p class="text-gray-500 text-sm">
+        Baile urbano. Variación de canciones entre el estilo K-Pop
+      </p>
+    </div>
+
+    <!-- ITEM -->
+    <div class="flex flex-col items-center">
+      <div class="w-20 h-20 flex items-center justify-center mb-4">
+        <svg class="w-12 h-12">
+          <use href="svg/sprites.svg#icon-group"></use>
+        </svg>
+      </div>
+      <h3 class="font-semibold text-lg">Trabajo en equipo</h3>
+      <p class="text-gray-500 text-sm">
+        Líder de un grupo de baile desde 2024. Perteneciente a otro grupo desde 2025.
+      </p>
+    </div>
+
+    <!-- ITEM -->
+    <div class="flex flex-col items-center">
+      <div class="w-20 h-20 flex items-center justify-center mb-4">
+        <svg class="w-12 h-12">
+          <use href="svg/sprites.svg#icon-stage"></use>
+        </svg>
+      </div>
+      <h3 class="font-semibold text-lg">Experiencia escénica</h3>
+      <p class="text-gray-500 text-sm">
+        Participación en competiciones realizadas en la Comunidad de Madrid.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- MY STORY -->
+<section class="grid md:grid-cols-2">
+  <img src="img/me.png" class="w-full h-full object-cover">
+  <div class="p-12 flex flex-col justify-center">
+    <h2 class="text-3xl font-bold mb-4">Hola, soy <span class="text-purple-500">Andrea</span></h2>
+    <p class="text-gray-600">
+      Desde pequeña siempre me ha encantado el baile. Cada vez que sacaban una versión nueva de Just Dance, pedía que me lo comprasen para jugar 
+      en la Wii junto con mi hermana mayor (incluidas versiones especiales, como la de Disney). Nunca me había atrevido a bailar en público hasta
+      el año 2024, en el cual fundé un grupo con una amiga llamado 2Foxx. Todavía no tenemos muchos vídeos subidos en nuestra cuenta de YouTube, 
+      pero gracias a ello, conocimos a más gente y ahora también formamos parte de su grupo (llamado ET7RNAL). En este pequeño panel que se encuentra
+      debajo, os muestro algunas de nuestras coreografías que espero sean de su agrado.
+    </p>
+  </div>
+</section>
+
+<!-- SHOWCASE -->
+<section class="py-20">
+
+  <h2 class="text-center text-sm tracking-widest text-gray-400">PORTFOLIO</h2>
+  <h3 class="text-center text-4xl font-bold mb-12">Showcase</h3>
+
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- ITEMS -->
+      <div class="relative group">
+        <div class="w-full h-64 overflow-hidden rounded-xl relative">
+
+          <img src="img/danza/golden.jpg"
+               class="absolute inset-0 w-full h-full
+                      object-cover
+                      transition duration-500 ease-out
+                      group-hover:object-contain
+                      group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/50
+                      opacity-0 group-hover:opacity-100
+                      transition duration-500
+                      flex items-center justify-center">
+
+            <span class="text-white text-lg font-semibold tracking-wide"><a href="https://youtu.be/xxfGhvECCJA?si=ndiwXlPMu0kWAAoh">
+              🔗 Ir al vídeo
+            </span></a>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="relative group">
+        <div class="w-full h-64 overflow-hidden rounded-xl relative">
+
+          <img src="img/danza/runwild.jpg"
+               class="absolute inset-0 w-full h-full
+                      object-cover
+                      transition duration-500 ease-out
+                      group-hover:object-contain
+                      group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/50
+                      opacity-0 group-hover:opacity-100
+                      transition duration-500
+                      flex items-center justify-center">
+
+            <span class="text-white text-lg font-semibold"><a href="https://youtu.be/CooQNKnKZdA?si=aoRlxE9BkGdo-arI">
+              🔗 Ir al vídeo
+            </span></a>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="relative group">
+        <div class="w-full h-64 overflow-hidden rounded-xl relative">
+
+          <img src="img/danza/sign.jpg"
+               class="absolute inset-0 w-full h-full
+                      object-cover
+                      transition duration-500 ease-out
+                      group-hover:object-contain
+                      group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/50
+                      opacity-0 group-hover:opacity-100
+                      transition duration-500
+                      flex items-center justify-center">
+
+            <span class="text-white text-lg font-semibold"><a href="https://youtu.be/J4naA28wpFs?si=C8jDJX4AS33QigIe">
+              🔗 Ir al vídeo
+            </span></a>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="relative group">
+        <div class="w-full h-64 overflow-hidden rounded-xl relative">
+
+          <img src="img/danza/bwl.jpeg"
+               class="absolute inset-0 w-full h-full
+                      object-cover
+                      transition duration-500 ease-out
+                      group-hover:object-contain
+                      group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/50
+                      opacity-0 group-hover:opacity-100
+                      transition duration-500
+                      flex items-center justify-center">
+
+            <span class="text-white text-lg font-semibold tracking-wide"><a href="https://youtu.be/p1aIQYPdGHQ?si=-xSPct1sBWt1g2EZ">
+              🔗 Ir al vídeo
+            </span></a>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="relative group">
+        <div class="w-full h-64 overflow-hidden rounded-xl relative">
+
+          <img src="img/danza/devilgame.jpg"
+               class="absolute inset-0 w-full h-full
+                      object-cover
+                      transition duration-500 ease-out
+                      group-hover:object-contain
+                      group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/50
+                      opacity-0 group-hover:opacity-100
+                      transition duration-500
+                      flex items-center justify-center">
+
+            <span class="text-white text-lg font-semibold tracking-wide"><a href="httpsyoutu.be0IIuqr1YhZgsi=wRSW7KlEU1Rx6SKL">
+              🔗 Ir al vídeo
+            </span></a>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="relative group">
+        <div class="w-full h-64 overflow-hidden rounded-xl relative">
+
+          <img src="img/danza/knife.jpg"
+               class="absolute inset-0 w-full h-full
+                      object-cover
+                      transition duration-500 ease-out
+                      group-hover:object-contain
+                      group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/90 rounded-xl"></div>
+
+          <div class="absolute inset-0 flex items-center justify-center">
+            <span class="text-white font-semibold text-lg">PRÓXIMAMENTE</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+  const closeBtn = document.getElementById("closeMenu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("translate-x-full");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    menu.classList.add("translate-x-full");
+  });
+</script>
+
+</body>
+</html>
