@@ -1,7 +1,7 @@
 # Portfolio Personal
 
 ## 🌐 Web publicada
-https://alumno549439.github.io/DIW/
+https://alumno549439.github.io/PortfolioDIW/
 
 ## 🛠 Tecnologías
 - HTML
